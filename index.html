@@ -65,6 +65,78 @@ Mentecuerpo - TEMFE
   </section>
 <section style="max-width:1100px;margin:auto;padding:60px 20px;">
   <h2 style="text-align:center;font-size:32px;margin-bottom:40px;">
+    <section style="max-width:1100px;margin:40px auto;padding:20px;">
+
+<h2 style="text-align:center;font-size:32px;margin-bottom:20px;">
+¿A quién atendemos?
+</h2>
+
+<!-- BOTONES -->
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:20px;">
+    <button onclick="mostrar('colegio')" class="tab-btn">Colegios</button>
+    <button onclick="mostrar('pymes')" class="tab-btn">Pymes</button>
+    <button onclick="mostrar('familias')" class="tab-btn">Familias</button>
+    <button onclick="mostrar('parejas')" class="tab-btn">Parejas</button>
+    <button onclick="mostrar('otros')" class="tab-btn">Otros</button>
+</div>
+
+<!-- CONTENIDO -->
+<div id="colegio" class="tab-content">
+    Atención psicológica escolar, orientación, evaluación e informes para colegios.
+</div>
+
+<div id="pymes" class="tab-content" style="display:none;">
+    Programas de bienestar emocional, manejo de estrés y productividad laboral.
+</div>
+
+<div id="familias" class="tab-content" style="display:none;">
+    Terapia familiar, orientación y fortalecimiento de relaciones familiares.
+</div>
+
+<div id="parejas" class="tab-content" style="display:none;">
+    Terapia de pareja, comunicación y resolución de conflictos.
+</div>
+
+<div id="otros" class="tab-content" style="display:none;">
+    Atención integral para niños, jóvenes, adultos y adultos mayores.
+</div>
+
+</section>
+
+<!-- ESTILOS -->
+<style>
+.tab-btn{
+    padding:10px 18px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.tab-btn:hover{
+    background:#7c3aed;
+    color:#fff;
+}
+
+.tab-content{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+</style>
+
+<!-- SCRIPT -->
+<script>
+function mostrar(id){
+    let tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.style.display = 'none');
+
+    document.getElementById(id).style.display = 'block';
+}
+</script>
     Nuestros Servicios
   </h2>
 
