@@ -138,32 +138,80 @@ function mostrar(id){
 }
 </script>
     
-<section id="colegios" style="max-width:900px;margin:60px auto;text-align:center;">
-<h2>Colegios</h2>
-<p>Atención psicológica escolar, evaluaciones, orientación e informes.</p>
+<section style="max-width:1100px;margin:40px auto;padding:20px;text-align:center;">
+
+  <h2 style="font-size:32px;margin-bottom:20px;">¿A quién atendemos?</h2>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:20px;">
+    <button onclick="mostrarTab('colegios')" class="tab-btn">Colegios</button>
+    <button onclick="mostrarTab('pymes')" class="tab-btn">Pymes</button>
+    <button onclick="mostrarTab('familias')" class="tab-btn">Familias</button>
+    <button onclick="mostrarTab('parejas')" class="tab-btn">Parejas</button>
+    <button onclick="mostrarTab('otros')" class="tab-btn">Otros</button>
+  </div>
+
+  <div id="colegios" class="tab-box">
+    Atención psicológica escolar, orientación, evaluación e informes para colegios.
+  </div>
+
+  <div id="pymes" class="tab-box" style="display:none;">
+    Programas de bienestar emocional, manejo del estrés y productividad para pymes.
+  </div>
+
+  <div id="familias" class="tab-box" style="display:none;">
+    Terapia familiar, orientación y fortalecimiento de vínculos familiares.
+  </div>
+
+  <div id="parejas" class="tab-box" style="display:none;">
+    Terapia de pareja, comunicación y resolución de conflictos.
+  </div>
+
+  <div id="otros" class="tab-box" style="display:none;">
+    Atención integral para niños, adolescentes, jóvenes, adultos y adultos mayores.
+  </div>
+
 </section>
 
-<section id="pymes" style="max-width:900px;margin:60px auto;text-align:center;">
-<h2>Pymes</h2>
-<p>Programas de bienestar emocional, manejo del estrés y productividad.</p>
-</section>
+<style>
+  .tab-btn{
+    padding:10px 18px;
+    border:1px solid #d6d3d1;
+    border-radius:20px;
+    background:#fff;
+    color:#6b21a8;
+    font-weight:bold;
+    cursor:pointer;
+  }
 
-<section id="familias" style="max-width:900px;margin:60px auto;text-align:center;">
-<h2>Familias</h2>
-<p>Terapia familiar, orientación y fortalecimiento de relaciones.</p>
-</section>
+  .tab-btn:hover{
+    background:#7c3aed;
+    color:#fff;
+  }
 
-<section id="parejas" style="max-width:900px;margin:60px auto;text-align:center;">
-<h2>Parejas</h2>
-<p>Terapia de pareja, comunicación y resolución de conflictos.</p>
-</section>
+  .tab-box{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.5;
+  }
+</style>
 
-<section id="otros" style="max-width:900px;margin:60px auto;text-align:center;">
-<h2>Otros</h2>
-<p>Atención integral para niños, jóvenes, adultos y adultos mayores.</p>
-</section>Nuestros Servicios
-  </h2>
+<script>
+  function mostrarTab(id){
+    document.getElementById('colegios').style.display='none';
+    document.getElementById('pymes').style.display='none';
+    document.getElementById('familias').style.display='none';
+    document.getElementById('parejas').style.display='none';
+    document.getElementById('otros').style.display='none';
 
+    document.getElementById(id).style.display='block';
+  }
+</script>
   <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
 
     <div style="background:#fff;padding:25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,0.05);">
