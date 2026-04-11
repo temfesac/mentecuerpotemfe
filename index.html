@@ -7,9 +7,16 @@
   <h1 style="font-size:44px;color:#6b21a8;margin:20px 0;text-align:center;">
 Psicología y Fisioterapia en Chosica
 </h1>
+<h1 class="fade-up" style="font-size:44px;color:#6b21a8;margin:20px 0;text-align:center;">
+  Psicología y Fisioterapia en Chosica
+</h1>
 
-<p style="font-size:20px;color:#555;text-align:center;">
-Mentecuerpo TEMFE - Atención profesional integral para tu bienestar mental y físico
+<p class="fade-up delay-1" style="font-size:20px;color:#555;text-align:center;">
+  Mentecuerpo TEMFE - Atención profesional integral para tu bienestar mental y físico
+</p>
+
+<p class="fade-up delay-2" style="font-size:16px;color:#777;text-align:center;">
+  📍 Atención en Chosica - Lima | Niños, adolescentes y adultos
 </p>
 
 <p style="font-size:16px;color:#777;text-align:center;">
@@ -17,14 +24,24 @@ Mentecuerpo TEMFE - Atención profesional integral para tu bienestar mental y f�
 </p>
   <meta name="description" content="Mentecuerpo - TEMFE. Atención psicológica y fisioterapia integral en Chosica para colegios, empresas, familias, parejas y atención general.">
   <style>
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#F7F3FC;
-      color:#24324A;
-    }
+    <style>
+.fade-up{
+  opacity:0;
+  transform:translateY(24px);
+  animation:fadeUp .9s ease forwards;
+}
+
+.fade-up.delay-1{animation-delay:.15s;}
+.fade-up.delay-2{animation-delay:.3s;}
+.fade-up.delay-3{animation-delay:.45s;}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>
   .topbar{
   position:sticky;
   top:0;
