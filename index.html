@@ -18,6 +18,31 @@
   word-break: break-word;
 }
     }
+  .fade-up{
+  opacity:0;
+  transform:translateY(24px);
+  animation:fadeUp 0.9s ease forwards;
+}
+
+.delay-1{ animation-delay:0.15s; }
+.delay-2{ animation-delay:0.3s; }
+.delay-3{ animation-delay:0.45s; }
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.soft-hover{
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.soft-hover:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.10);
+}
 
     .container{
       max-width:1100px;
@@ -445,7 +470,7 @@
       }
     }
   </style>
-</head>
+ </head>
 <body>
 
   <nav class="topbar">
