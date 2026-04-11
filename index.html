@@ -72,26 +72,6 @@ Psicología y Fisioterapia en Chosica
   background:#EDE5FF;
   color:#3D238D;
 }
-  <style>
-.soft-card{
-  transition:transform .25s ease, box-shadow .25s ease;
-}
-
-.soft-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 16px 30px rgba(0,0,0,0.10);
-}
-    <style>
-.topbar a{
-  transition:color .2s ease, transform .2s ease;
-}
-
-.topbar a:hover{
-  color:#6b21a8;
-  transform:translateY(-1px);
-}
-</style>
-</style>
     .hero{
   <section style="padding:40px 20px;max-width:1100px;margin:auto;">
   <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -114,7 +94,7 @@ Psicología y Fisioterapia en Chosica
 
   <div style="max-width:900px;margin:auto;">
 
-    <img class="fade-up delay-1" src="logo-completo.png" ...>
+    <img src="logo-completo.png" style="width:180px;margin-bottom:20px;border-radius:20px;">
 
     <h1 style="font-size:42px;color:#6b21a8;margin-bottom:10px;">
       Psicología y Fisioterapia en Chosica
@@ -408,27 +388,59 @@ Psicología y Fisioterapia en Chosica
 </style>
  <style>
 .wa-float{
-  <style>
-.wa-float{
   position:fixed;
-  bottom:24px;
   right:24px;
+  bottom:24px;
+  display:flex;
+  align-items:center;
+  gap:10px;
   background:linear-gradient(135deg,#25D366 0%, #1fb85a 100%);
   color:#fff;
-  padding:16px 24px;
+  padding:16px 22px;
   border-radius:999px;
-  font-weight:800;
   text-decoration:none;
+  font-weight:800;
+  font-size:17px;
   box-shadow:0 14px 28px rgba(0,0,0,0.22);
   z-index:1001;
-  transition:transform .2s ease, box-shadow .2s ease;
+  transition:transform .2s ease, box-shadow .2s ease, opacity .2s ease;
 }
 
 .wa-float:hover{
-  transform:translateY(-2px) scale(1.03);
+  transform:translateY(-2px);
   box-shadow:0 18px 34px rgba(0,0,0,0.26);
 }
-</style>
+
+.wa-float:active{
+  transform:translateY(0);
+}
+
+.wa-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.18);
+  font-size:18px;
+  line-height:1;
+}
+
+@media (max-width:768px){
+  .wa-float{
+    right:16px;
+    bottom:16px;
+    padding:14px 18px;
+    font-size:15px;
+  }
+
+  .wa-icon{
+    width:28px;
+    height:28px;
+    font-size:16px;
+  }
+}
 </style>
 <body>
   <nav class="topbar">
