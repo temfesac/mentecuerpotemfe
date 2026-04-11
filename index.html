@@ -253,20 +253,7 @@
       color:#667085;
       font-size:15px;
     }
-    .wa-float{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
-      color:#fff;
-      padding:15px 20px;
-      border-radius:50px;
-      font-weight:bold;
-      text-decoration:none;
-      box-shadow:0 8px 20px rgba(0,0,0,0.22);
-      z-index:1001;
-    }
-    @media (max-width:768px){
+        @media (max-width:768px){
   .brand{font-size:40px}
   .subtitle{font-size:20px}
   .section-title{font-size:32px}
@@ -276,6 +263,26 @@
   .topbar-inner a{padding:8px 12px;font-size:14px}
 }
   </style>
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 22px;
+  border-radius:999px;
+  font-weight:800;
+  text-decoration:none;
+  box-shadow:0 14px 28px rgba(0,0,0,0.20);
+  z-index:1001;
+  transition:.25s;
+}
+
+.wa-float:hover{
+  transform:translateY(-2px);
+}
+
+</style>
 </head>
 <body>
 
@@ -463,8 +470,6 @@
 
 </body>
 </html>
-
-<div class="reason">Atención profesional con trato humano y personalizado</div>
-<div class="reason">Integración de psicología y fisioterapia en un mismo enfoque</div>
-<div class="reason">Experiencia de atención para distintas etapas de vida</div>
-<div class="reason">Orientación, evaluación e informes con enfoque responsable</div>
+<a class="wa-float" href="https://wa.me/51928115283?text=Hola,%20quisiera%20información%20sobre%20atención%20psicológica%20y%20fisioterapia" target="_blank">
+💬 WhatsApp
+</a>
