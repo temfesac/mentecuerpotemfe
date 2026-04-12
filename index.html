@@ -268,16 +268,19 @@
       text-align:center;
     }
 
-    .stats-grid h3{
-      margin:0 0 8px;
-      font-size:36px;
-    }
-
-    .stats-grid p{
-      margin:0;
-      font-size:17px;
-    }
-
+    .stats-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  text-align:center;
+}
+     @media (max-width:768px){
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+}
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -486,12 +489,12 @@
 }
 
 .soft-hover{
-  transition:transform 0.25s ease, box-shadow 0.25s ease;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
 
 .soft-hover:hover{
-  transform:translateY(-6px);
-  box-shadow:0 14px 28px rgba(0,0,0,0.10);
+  transform:translateY(-8px);
+  box-shadow:0 16px 30px rgba(0,0,0,0.12);
 }
     }
   </style>
@@ -907,4 +910,17 @@
   </a>
 </body>
 </html>
+<div>
+  <h3>+500</h3>
+  <p>Pacientes atendidos</p>
+</div>
 
+<div>
+  <h3>+1000</h3>
+  <p>Sesiones realizadas</p>
+</div>
+
+<div>
+  <h3>100%</h3>
+  <p>Atención personalizada y profesional</p>
+</div>
